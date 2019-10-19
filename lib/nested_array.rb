@@ -22,6 +22,6 @@ def matrix_lookup(matrix, row, column)
   p matrix[row][column]
 end
 def matrix_update(matrix, row, column, new_value)
-  local_copy_of_matrix = [ENNET_HOUSE, ENFIELD_TENNIS_ACADEMY]
-  matrix[row][column]=new_value
+  local_copy_of_matrix = assembled_matrix.dup
+  result = matrix_update(local_copy_of_matrix, 0, 2, "Tiny Ewell")
 end

@@ -23,6 +23,7 @@ def matrix_lookup(matrix, row, column)
 end
 def matrix_update(matrix, row, column, new_value)
   local_copy_of_matrix = assembled_matrix.dup
-  result = matrix_update(local_copy_of_matrix, 0, 2, "Tiny Ewell")
+  matrix[row][column]=new_value
+  result=local_copy_of_matrix
   p result
 end

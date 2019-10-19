@@ -22,7 +22,7 @@ def matrix_lookup(matrix, row, column)
   p matrix[row][column]
 end
 def matrix_update(matrix, row, column, new_value)
-  local_copy_of_matrix = assembled_matrix.dup
+  local_copy_of_matrix = assembled_matrix
   result = matrix[row][column]=new_value
   p result
 end

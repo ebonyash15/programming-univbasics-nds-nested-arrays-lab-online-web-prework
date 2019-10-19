@@ -18,12 +18,10 @@ def array_literal_matrix
   array_literal_matrix = [ENNET_HOUSE.sort, ENFIELD_TENNIS_ACADEMY.sort]
   p array_literal_matrix
 end
-
 def matrix_lookup(matrix, row, column)
   p matrix[row][column]
 end
-
 def matrix_update(matrix, row, column, new_value)
-  # Update the matrix location at row and column to have the value of new_value
-  # Return the updated matrix
+  local_copy_of_matrix = assembled_matrix.dup
+  result = matrix[row][column]=string)  
 end

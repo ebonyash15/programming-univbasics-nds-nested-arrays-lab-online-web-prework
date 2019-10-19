@@ -1,24 +1,18 @@
-# Examples inspired by David Foster Wallace's # (2/21/1962 to 9/12/2008) _Infinite Jest_
-
 ENNET_HOUSE = [
   "Don Gately",
   "Joelle van Dyne",
   "Pat M.",
   "Kate Gompert",
-  "Bruce Green"
-]
-
+  "Bruce Green"]
 ENFIELD_TENNIS_ACADEMY = [
   "Hal Incandenza",
   "Lyle",
   "Gerhard Schtitt",
   "Mario Incandenza",
-  "Michael Pemulis"
-]
-
+  "Michael Pemulis"]
 def assembled_matrix
-  # Build an array that contains (or, "nests") the residents of The Ennet House
-  # and the Enfield Tennis Academy as provided by the constants
+  assembled_matrix = [ENNET_HOUSE, ENFIELD_TENNIS_ACADEMY]
+  p assembled_matrix
 end
 
 def array_literal_matrix
